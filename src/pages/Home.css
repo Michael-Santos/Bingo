@@ -45,7 +45,7 @@
 }
 
 .BingoCard td, .BingoCard th {
-  border: 1px solid #1976d2;
+  border: 2px solid #1976d2;
   padding: 8px;
   text-align: center;
   font-size: 1.1rem;
