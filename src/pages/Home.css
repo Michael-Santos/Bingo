@@ -1,0 +1,71 @@
+.Home {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  text-align: center;
+}
+
+.Home h1 {
+  color: #1976d2;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.Home h2 {
+  color: #333;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.BingoCards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.BingoCard {
+  background: #f5faff;
+  border: 2px solid #1976d2;
+  border-radius: 10px;
+  padding: 12px;
+  min-width: 120px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  margin-bottom: 16px;
+}
+
+.BingoCard table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.BingoCard td, .BingoCard th {
+  border: 1px solid #1976d2;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  background: #fff;
+}
+
+.BingoCard th {
+  background: #1976d2;
+  color: #fff;
+  font-weight: bold;
+}
+
+.BingoCard td.marked {
+  background: #64b5f6;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #2196f3;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.NameEntry {
+  margin-bottom: 24px;
+}

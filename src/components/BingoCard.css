@@ -1,0 +1,79 @@
+.BingoTabs {
+  margin-top: 24px;
+}
+
+.BingoTabHeaders {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.BingoTabHeaders button {
+  background: #e3eafc;
+  border: 1px solid #1976d2;
+  color: #1976d2;
+  padding: 8px 20px;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+
+.BingoTabHeaders button.active,
+.BingoTabHeaders button:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+.BingoTabContent {
+  display: flex;
+  justify-content: center;
+}
+
+.BingoCard {
+  background: #fff;
+  border: 3px solid #1976d2;
+  border-radius: 0 0 12px 12px;
+  padding: 18px 12px 12px 12px;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  margin-bottom: 16px;
+}
+
+.BingoCard table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #f5faff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.BingoCard th, .BingoCard td {
+  border: 1px solid #1976d2;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+}
+
+.BingoCard th {
+  background: #1976d2;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.BingoCard td {
+  background: #fff;
+}
+
+.BingoCard td.center {
+  background: #ffe082;
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 1.3rem;
+  border: 2px solid #ffb300;
+}
