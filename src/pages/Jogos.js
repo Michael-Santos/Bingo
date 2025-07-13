@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DrawTable from '../components/DrawTable';
 import './Jogos.css';
 
@@ -8,13 +8,21 @@ function Jogos() {
   const [selectedGameId, setSelectedGameId] = useState(null);
   const [drawnNumbers, setDrawnNumbers] = useState({}); // { [gameId]: [números sorteados] }
 
+  useEffect(() => {
+    const storedGames = JSON.parse(localStorage.getItem('bingo_games') || '[]');
+    setGames(storedGames);
+  }, []);
+
   const handleCreateGame = (e) => {
     e.preventDefault();
     if (!newGameName.trim()) return;
     const newGame = { name: newGameName, id: Date.now() };
-    setGames([...games, newGame]);
+    const updatedGames = [...games, newGame];
+    setGames(updatedGames);
     setNewGameName('');
     setDrawnNumbers(prev => ({ ...prev, [newGame.id]: [] }));
+    // Salva no localStorage
+    localStorage.setItem('bingo_games', JSON.stringify(updatedGames));
   };
 
   const handleSelectGame = (gameId) => {

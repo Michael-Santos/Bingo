@@ -13,13 +13,13 @@ const NameEntry = ({ onSubmit }) => {
 
   return (
     <div>
-      <h2>Enter Player Name</h2>
+      <h3>Informe seu nome para jogar</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={playerName}
           onChange={(e) => setPlayerName(e.target.value)}
-          placeholder="Enter your name"
+          placeholder="Informe seu nome para jogar"
           required
         />
         <button type="submit">Submit</button>
